@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Soul Train</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  
+  <body>
+  
+     
+    <div class="container mt-5 mb-2 py-3 wrapper">
+        <section>
+            <div class="row">
+                <div class="col">
+                    <div class="jumbotron jumbotron-fluid text-center rounded pt-5 pb-4 container-header">
+                        <div class="container">
+                            <h1 class="display-4">.</h1>
+                            <p class="lead">Ride The Soul Train</p>
+                            
+                            <p class="lead">Get Your Booggie On</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4 bordered">
+                <div class="card-header  py-1 display-header">
+                    Current Soul Train Schedule
+                </div>
+                <table class="text-center table">
+                    <thead class="table-header">
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div id="trainInformation">
+                <div class="card mb-4 bordered">
+                    <div class="card-header py-1 display-header" id="headingOne">
+                        <button class="btn btn-primary px-0 py-0 display-header add-train" data-toggle="trainInformation" data-target="#addTraininfo" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Add Train
+                        </button>
+                    </div>
+                    <div id="addTraininfo" class="new-train" aria-labelledby="headingOne" data-parent="#newTrain">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="train-name" class="label-name">Train Name</label>
+                                    <input type="text" class="form-control" id="train-name" placeholder="Enter Train name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="train-destination" class="label-name">Destination</label>
+                                    <input type="text" class="form-control" id="destination" placeholder="Enter Destination">
+                                </div>
+                                <div class="form-group">
+                                    <label for="time" class="label-name">First Train Time (HHmm - military time)</label>
+                                    <input type="text" class="form-control" id="time" placeholder="Enter Train Time '0000'">
+                                </div>
+                                <div class="form-group">
+                                    <label for="frequency" class="label-name">Frequency (min)</label>
+                                    <input type="number" class="form-control" id="frequency" placeholder="Enter Frequency in Minutes">
+                                </div>
+                                <button type="submit" class="btn btn-sm btn-primary my-1 display-header" data-toggle="modal" data-target="#warningModal" id="submit">Submit</button>
+                                <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="myModalLabel">Attention</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    A new train route was successfully added!
+                                                </div>
+                                                <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+              
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/af.js"></script>
+      <script src="assets/javascript/app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  </body>
+  
+  </html>

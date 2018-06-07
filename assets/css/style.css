@@ -1,0 +1,32 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 34px;
+    color: #777;
+    background: gold;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-header {
+    color: gold;
+    background-image: url(/Users/wesmora/dev/uofu/Homework/Homework7/assets/images/Soul_Train_Jumbotron.jpg)
+}
+
+.display-header {
+    color: #ffffff;
+    background:rgb(231, 51, 231);
+    font-weight: bold;
+}
+
+.bordered { 
+    border-color: purple;
+}
+
+
+.add-train{
+    border: hidden;
+    color: #ffffff;
+    background:purple;
+    font-weight: bold;
+}
